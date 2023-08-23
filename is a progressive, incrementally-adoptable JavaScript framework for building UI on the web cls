@@ -1,0 +1,151 @@
+[33mcommit cc3df3ce41cf79003b60aa6797b53199361a4b73[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Fernando <meusarkkivos@gmail.com>
+Date:   Sun Aug 20 14:56:41 2023 -0300
+
+    Projeto Web LH Pets Fernando Arruda
+
+[1mdiff --git a/Projeto_Web-Lh_Pets_Alunos.deps.json b/Projeto_Web-Lh_Pets_Alunos.deps.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..89425c7[m
+[1m--- /dev/null[m
+[1m+++ b/Projeto_Web-Lh_Pets_Alunos.deps.json[m
+[36m@@ -0,0 +1,164 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "runtimeTarget": {[m
+[32m+[m[32m    "name": ".NETCoreApp,Version=v6.0",[m
+[32m+[m[32m    "signature": ""[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "compilationOptions": {},[m
+[32m+[m[32m  "targets": {[m
+[32m+[m[32m    ".NETCoreApp,Version=v6.0": {[m
+[32m+[m[32m      "Projeto_Web-Lh_Pets_Alunos/1.0.0": {[m
+[32m+[m[32m        "dependencies": {[m
+[32m+[m[32m          "System.Data.SqlClient": "4.8.5"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "runtime": {[m
+[32m+[m[32m          "Projeto_Web-Lh_Pets_Alunos.dll": {}[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "Microsoft.NETCore.Platforms/3.1.0": {},[m
+[32m+[m[32m      "Microsoft.Win32.Registry/4.7.0": {[m
+[32m+[m[32m        "dependencies": {[m
+[32m+[m[32m          "System.Security.AccessControl": "4.7.0",[m
+[32m+[m[32m          "System.Security.Principal.Windows": "4.7.0"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "runtime.native.System.Data.SqlClient.sni/4.7.0": {[m
+[32m+[m[32m        "dependencies": {[m
+[32m+[m[32m          "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",[m
+[32m+[m[32m          "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",[m
+[32m+[m[32m          "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {[m
+[32m+[m[32m        "runtimeTargets": {[m
+[32m+[m[32m          "runtimes/win-arm64/native/sni.dll": {[m
+[32m+[m[32m            "rid": "win-arm64",[m
+[32m+[m[32m            "assetType": "native",[m
+[32m+[m[32m            "fileVersion": "4.6.25512.1"[m
+[32m+[m[32m          }[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {[m
+[32m+[m[32m        "runtimeTargets": {[m
+[32m+[m[32m          "runtimes/win-x64/native/sni.dll": {[m
+[32m+[m[32m            "rid": "win-x64",[m
+[32m+[m[32m            "assetType": "native",[m
+[32m+[m[32m            "fileVersion": "4.6.25512.1"[m
+[32m+[m[32m          }[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {[m
+[32m+[m[32m        "runtimeTargets": {[m
+[32m+[m[32m          "runtimes/win-x86/native/sni.dll": {[m
+[32m+[m[32m            "rid": "win-x86",[m
+[32m+[m[32m            "assetType": "native",[m
+[32m+[m[32m            "fileVersion": "4.6.25512.1"[m
+[32m+[m[32m          }[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "System.Data.SqlClient/4.8.5": {[m
+[32m+[m[32m        "dependencies": {[m
+[32m+[m[32m          "Microsoft.Win32.Registry": "4.7.0",[m
+[32m+[m[32m          "System.Security.Principal.Windows": "4.7.0",[m
+[32m+[m[32m          "runtime.native.System.Data.SqlClient.sni": "4.7.0"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "runtime": {[m
+[32m+[m[32m          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {[m
+[32m+[m[32m            "assemblyVersion": "4.6.1.5",[m
+[32m+[m[32m            "fileVersion": "4.700.22.51706"[m
+[32m+[m[32m          }[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "runtimeTargets": {[m
+[32m+[m[32m          "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {[m
+[32m+[m[32m            "rid": "unix",[m
+[32m+[m[32m            "assetType": "runtime",[m
+[32m+[m[32m            "assemblyVersion": "4.6.1.5",[m
+[32m+[m[32m            "fileVersion": "4.700.22.51706"[m
+[32m+[m[32m          },[m
+[32m+[m[32m          "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {[m
+[32m+[m[32m            "rid": "win",[m
+[32m+[m[32m            "assetType": "runtime",[m
+[32m+[m[32m            "assemblyVersion": "4.6.1.5",[m
+[32m+[m[32m            "fileVersion": "4.700.22.51706"[m
+[32m+[m[32m          }[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "System.Security.AccessControl/4.7.0": {[m
+[32m+[m[32m        "dependencies": {[m
+[32m+[m[32m          "Microsoft.NETCore.Platforms": "3.1.0",[m
+[32m+[m[32m          "System.Security.Principal.Windows": "4.7.0"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "System.Security.Principal.Windows/4.7.0": {}[m
+[32m+[m[32m    }[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "libraries": {[m
+[32m+[m[32m    "Projeto_Web-Lh_Pets_Alunos/1.0.0": {[m
+[32m+[m[32m      "type": "project",[m
+[32m+[m[32m      "serviceable": false,[m
+[32m+[m[32m      "sha512": ""[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "Microsoft.NETCore.Platforms/3.1.0": {[m
+[32m+[m[32m      "type": "package",[m
+[32m+[m[32m      "serviceable": true,[m
+[32m+[m[32m      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",[m
+[32m+[m[32m      "path": "microsoft.netcore.platforms/3.1.0",[m
+[32m+[m[32m      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "Microsoft.Win32.Registry/4.7.0": {[m
+[32m+[m[32m      "type": "package",[m
+[32m+[m[32m      "serviceable": true,[m
+[32m+[m[32m      "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",[m
+[32m+[m[32m      "path": "microsoft.win32.registry/4.7.0",[m
+[32m+[m[32m      "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "runtime.native.System.Data.SqlClient.sni/4.7.0": {[m
+[32m+[m[32m      "type": "package",[m
+[32m+[m[32m      "serviceable": true,[m
+[32m+[m[32m      "sha512": "sha512-9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",[m
+[32m+[m[32m      "path": "runtime.native.system.data.sqlclient.sni/4.7.0",[m
+[32m+[m[32m      "hashPath": "runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {[m
+[32m+[m[32m      "type": "package",[m
+[32m+[m[32m      "serviceable": true,[m
+[32m+[m[32m      "sha512": "sha512-LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",[m
+[32m+[m[32m      "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",[m
+[32m+[m[32m      "hashPath": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {[m
+[32m+[m[32m      "type": "package",[m
+[32m+[m[32m      "serviceable": true,[m
+[32m+[m[32m      "sha512": "sha512-38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",[m
+[32m+[m[32m      "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",[m
+[32m+[m[32m      "hashPath": "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {[m
+[32m+[m[32m      "type": "package",[m
+[32m+[m[32m      "serviceable": true,[m
+[32m+[m[32m      "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",[m
+[32m+[m[32m      "path": "runtime.win-x86.runtime.native.system.data.sql
